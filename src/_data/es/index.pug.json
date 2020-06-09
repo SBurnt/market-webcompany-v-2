@@ -1,0 +1,16 @@
+{
+  "data": {
+    "title": "Pug Starter",
+    "description": "Starter to build fast static websites",
+    "autores": "Ricardo Alfaro http://twitter.com/diablogris",
+    "summary_large_image": "summary_large_image"
+  },
+
+  "homepage": {
+    "section1": {
+      "title": "title", 
+      "extract": "Extract",
+      "extract_continue": "Extract continue"
+    }
+  }
+}

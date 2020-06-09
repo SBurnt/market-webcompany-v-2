@@ -1,0 +1,73 @@
+/*
+СЛАЙДЕРЫ И ШАПКИ правятся тут
+\src\_partials\sections\headers\header-1.pug
+\src\assets\css\includes\content.less
+\src\_partials\headers.pug
+*/
+
+/* При вкючении баннера требуется добавить шапке класс "container", а так же использовать слайдеры не на всю ширину экрана */
+
+// Цвета для разработки
+@white: #fff;
+@blue: #438BE3;
+@dark-title: #333333;
+@gray-text: #666666;
+
+@primary: #438BE3; // Основной Цвет
+
+@font: 14px; // Размер шрифта
+@ff: 'PTSans'; // Шрифт
+@container: 1200px; // Ширина контейнера
+@body-bg: url('../img/main-banner.jpg'); // фон за контейнером
+
+@header-top: none; // заливка верхней строчки
+@header-middle: none; // заливка средней строчки
+@header-bottom: none; // заливка нижней строчки
+
+@header-links: yellow; // ссылки щапки верх
+@header-links-middle: pink; // ссылки шапки средина
+@header-links-bottom: violet; // ссылки шапки низ
+@header-links-bottom-hover: blue; // ссылки шапки низ ховер
+@left-side: -100%; // 100% или -100% / сторона выпадающего меню
+
+@part1: black; // Иконка региона "Ваш город"
+@part2: gold; // Текст "Ваш город"
+@part3: gray; // Текст города
+@part4: orange; // Стрелка региона
+
+@part5: green; // Номер и стрелка
+@part6: red; // Текст под номером
+@part7: brown; // Иконка трубки
+
+@part8: silver; // Иконка "Войти"
+@part9: red; // Слово "Войти"
+@part10: #999; // Слово "Мой кабинет"
+
+@logo: red; // логотип
+
+@part11: olive; // Ссылка заказать звонок
+@part12: red; // Кнопка заказать звонок
+@part13: purple; // Слоган
+
+@adres: red; // Строка Адреса
+@part14: red; // иконки корзины / сравнения товаров / избранного
+
+@part15: brown; // Активная плашка "кружок", когда значение не равно 0 для: корзины / сравнения товаров / избранного
+
+@part16: red; // Слово "корзина"
+@part17: olive; // Сумма "корзины"
+
+@search-bg: #EDEDED; // фон строки поиска
+@search-ic-bg: #000; // цвет иконки строки поиска
+
+@part18: red; // слово "поиск" за исключением в строке поиска
+@part19: red; // Иконка поиска
+
+// Цвет кнопок захвата (на дизайне показан Желтыми кнопками (на баннере))
+@order-btn: #FAAD3D;
+
+// Включаемые отключаемые блоки В Шапке Сайта:
+@region-display: inline-block; // Регион // none - inline-block
+@sign-display: block; // Вход в Личный кабинет // none - block
+@user-count-display: inline-block; // Корзина / Сравнение товаров / Избранное (это одно отключение для 3-х элементов) // none - inline-block
+@callback-btn-display: inline-block; // Кнопка или ссылка "Заказать звонок" // none - inline-block

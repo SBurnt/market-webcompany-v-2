@@ -1,0 +1,38 @@
+.services{
+  &__nine{
+    background: #F8F8F8;
+  }
+  &-nine{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    &__item{
+      padding: 13px 13px;
+      text-align: center;
+      margin-bottom: 5px;
+      width: calc(25% - 5px);
+      margin-right: 5px;
+      background: #fff;
+      border: 1px solid #F1F2F6;
+      transition: box-shadow .4s ease;
+      &:hover{
+        box-shadow: 0px 0px 17px rgba(10, 10, 10, 0.2);
+      }
+      &__link{
+        display: inline-block;
+        margin-top: 15px;
+        color: @gray-text;
+        font-size: 13px;
+        transition: color .4s ease;
+        &:hover{
+          color: @blue;
+          font-weight: bold;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

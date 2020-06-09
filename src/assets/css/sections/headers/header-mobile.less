@@ -1,0 +1,204 @@
+.header-mobile{
+  display: none;
+  background: @primary;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  position: relative;
+  &__title{
+    & > span{
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      vertical-align: middle;
+    }
+  }
+  &__burger{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    position: relative;
+    height: 12px;
+    width: 18px;
+    &.open span:nth-child(1) {
+      top: 6px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+    &.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+    &.open span:nth-child(3) {
+      top: 6px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+    span{
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 6px;
+      }
+      &:nth-child(3) {
+        top: 12px;
+      }
+      position: absolute;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+      width: 18px;
+      height: 2px;
+      display: block;
+      background: @header-links-bottom;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__list{
+    .user-counts__item__link{
+      svg{
+        fill: #fff;
+        stroke: #fff;
+        &:hover{
+          fill: #fff;
+          stroke: #fff;
+        }
+      }
+    }
+    .user-counts__item__num{
+      background: #fff;
+      color: @primary;
+    }
+  }
+  &__menu{
+    position: absolute;
+    top: 100%;
+    left: -305px;
+    border-left: 8px solid @primary;
+    width: 100%;
+    max-width: 295px;
+    box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.5s ease;
+    background: #fff;
+    &.open{
+      left: 0;
+    }
+    &__item{
+      height: 60px;
+      border-bottom: 1px solid #E7E7E8;
+      line-height: 60px;
+      padding: 0 15px;
+      cursor: pointer;
+      &_phone{
+        display: flex;
+        line-height: 1;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: 600;
+        span{
+          font-weight: 500;
+          color: #999999;
+          font-size: .9rem;
+          margin-top: 5px;
+        }
+      }
+      a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &_back{
+        display: flex;
+        align-items: center;
+        color: #999999;
+        svg{
+          margin-right: 20px;
+        }
+      }
+      &.active{
+        color: #438BE3;
+        background: #ECF4FF;
+      }
+    }
+    &__sublist{
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: -295px;
+      width: 100%;
+      bottom: 0;
+      height: 100%;
+      z-index: 9999;
+      transition: left 0.5s ease;
+      &.active{
+        left: 0px;
+      }
+    }
+  }
+  &__info{
+    &__wrap{
+      position: relative;
+      vertical-align: middle;
+      display: inline;
+    }
+    &__list{
+      background: #F9F9F9;
+    }
+    &__item{
+      padding: 0 15px;
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #E7E7E8;
+      .phone-ic{
+        fill: @primary;
+        height: 20px;
+      }
+      & > a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      svg{
+        margin-right: 20px;
+        width: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__contact{
+    padding: 15px 0;
+    &__item{
+      display: flex;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        display: flex;
+      }
+      svg{
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+    }
+  }
+  &__place-ic{
+    position: static;
+  }
+}

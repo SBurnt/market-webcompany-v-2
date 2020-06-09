@@ -1,0 +1,148 @@
+.services{
+  &-ten{
+    display: flex;
+    justify-content: space-between;
+    &__tabs{
+      display: inline-block;
+      flex: 1 0 auto;
+      width: 300px;
+      &-content{
+        border: 1px solid #EFF1F5;
+        padding: 50px 36px 0;
+        position: relative;
+      }
+      &__item{
+        display: none;
+        align-items: flex-start;
+        &.active{
+          display: flex;
+        }
+        &__wrap{
+          margin-left: 40px;
+        }
+      }
+      &__title{
+        line-height: 1;
+        color: @dark-title;
+        font-size: 25px;
+        transition: color .4s ease;
+        &:hover{
+          color: @blue;
+        }
+      }
+      &__text{
+        font-size: 13px;
+        color: @gray-text;
+        line-height: 17px;
+      }
+      &__list{
+        font-size: 0;
+        li{
+          width: 50%;
+          display: inline-block;
+          font-size: 13px;
+          color: @blue;
+          line-height: 20px;
+          &:before{
+            content: " ";
+            display: inline-block;
+            height: 1px;
+            width: 13px;
+            background: @blue;
+            margin-right: 5px;
+            vertical-align: middle;
+          }
+          &:hover{
+            color: @gray-text;
+            font-weight: bold;
+            &:before{
+              background: @gray-text;
+              height: 2px;
+            }
+          }
+        }
+      }
+      &__more{
+        display: block;
+        border-top: 1px solid #EFF1F5;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        color: @gray-text;
+        text-transform: uppercase;
+        font-size: 11px;
+        margin-top: 25px;
+        svg{
+          fill: @gray-text;
+          width: 10px;
+          height: 8px;
+        }
+        &:hover{
+          color: @blue;
+          svg{
+            fill: @blue;
+          }
+        }
+      }
+      &__navs{
+        margin-top: 30px;
+      }
+      &__switch{
+        font-size: 13px;
+        color: @gray-text;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        transition: color .4s ease;
+        cursor: pointer;
+        &:hover{
+          color: @blue;
+        }
+        &.active{
+          border-left: 2px solid @blue;
+        }
+      }
+      &__all{
+        margin-left: 20px;
+        font-size: 11px;
+        color: @blue;
+        text-transform: uppercase;
+        transition: color .4s ease;
+        &:hover{
+          color: @gray-text;
+          font-weight: bold;
+        }
+      }
+    }
+    &__navs{
+      position: absolute;
+      right: 30px;
+      border: 1px solid #E6E6E6;
+      border-radius: 3px;
+      overflow: hidden;
+      font-size: 0;
+    }
+    &__nav{
+      cursor: pointer;
+      display: inline-block;
+      width: 40px;
+      height: 30px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 30px;
+      transition: background .4s ease;
+      svg{
+        fill: @blue;
+        transition: fill .4s ease;
+      }
+      &:hover{
+        background: @blue;
+        svg{
+          fill: @white;
+        }
+      }
+      &-prev{
+        border-right: 1px solid #E6E6E6;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.services{
+  &__eleven{
+    display: flex;
+    padding: 22px 0;
+    &__container{
+      background: #F8F8F8;
+    }
+    &__title{
+      font-size: 13px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #999797;
+      margin-bottom: 15px;
+      font-weight: normal;
+    }
+    &__subtitle{
+      color: @dark-title;
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    &__text{
+      color: @gray-text;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+    }
+    &__btn{
+      color: @blue;
+      border: 1px solid @blue;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 10px 20px;
+      margin-top: 25px;
+      display: inline-block;
+      transition: background .4s ease,
+                  color .4s ease;
+      &:hover{
+        background: @blue;
+        color: @white;
+      }
+    }
+    &__main{
+      width: 35%;
+      flex: 1 0 auto;
+      margin-right: 45px;
+    }
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -25px;
+    }
+    &__item{
+      width: calc(33.3333% - 25px);
+      margin-right: 25px;
+      background: @white;
+      margin-bottom: 25px;
+      border: 1px solid #EFF1F5;
+      transition: box-shadow .4s ease;
+      &:hover{
+        box-shadow: 0px 0px 17px rgba(10, 10, 10, 0.2);
+      }
+      &__link{
+        color: @gray-text;
+        font-size: 13px;
+        line-height: 17px;
+        span{
+          padding: 10px 20px;
+          display: block;
+          &:hover{
+            color: @blue;
+            font-weight: bold;
+          }
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

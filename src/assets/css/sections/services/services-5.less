@@ -1,0 +1,80 @@
+.services{
+  &-five{
+    display: flex;
+    &__main{
+      width: 25%;
+      background: @blue;
+      padding: 50px 25px 0 35px;
+    }
+    &__title{
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 25px;
+      color: #FFFFFF;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+    &__btn{
+      display: inline-block;
+      background: #FFFFFF;
+      border: 1px solid #C4C4C4;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      color: #438BE3;
+      padding: 10px;
+      transition: background .4s ease, color .4s ease;
+      &:hover{
+        background: transparent;
+        color: #fff;
+      }
+    }
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      width: 75%;
+    }
+    &__item{
+      width: 33.3333%;
+      flex: 0 1 auto;
+      position: relative;
+      &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        span{
+          font-weight: bold;
+          font-size: 13px;
+          color: #FFFFFF;
+          margin: 0 5px;
+          display: inline-block;
+          padding: 10px;
+          border-radius: 3px;
+          bottom: 5px;
+          position: absolute;
+          background: @blue;
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        filter: grayscale(0%);
+        transition: filter .5s ease;
+      }
+      &:hover{
+        img{
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
