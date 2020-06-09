@@ -60,9 +60,15 @@ gulp.task(
     browserSync.init({
       server: {
         baseDir: paths.public,
-        browser: ["google chrome"],
+        // browser: ['google chrome']
       },
-      port: 8000,
+      // tunnel: true,
+      // host: "localhost",
+      // port: 8000,
+      // open: true,
+      // logLevel: "silent",
+      // notify: false,
+      // logLevel: "info",
     });
   }
 );

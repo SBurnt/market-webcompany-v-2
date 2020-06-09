@@ -8,11 +8,11 @@ header.header-mobile
       svg(role="img").logo-mobile
         use(xlink:href="img/map.svg#logo")
   ul.header-mobile__list.user-counts
-    li.user-counts__item
+    li.user-counts__item.sign-display-show
       a(href="#").user-counts__item__link
         svg(role="img").sign-ic
           use(xlink:href="img/map.svg#sign")
-    li.user-counts__item.cart
+    li.user-counts__item.cart.cart-display-show
       a(href="#").user-counts__item__link
         svg(role="img").cart-ic
           use(xlink:href="img/map.svg#cart")
@@ -79,39 +79,35 @@ header.header-mobile
         a(href="#") Курсы
           svg(role="img").arrow-triangle
             use(xlink:href="img/map.svg#arrow-triangle")
-      li.header-mobile__menu__item
-        a(href="#") Проекты
-          svg(role="img").arrow-triangle
-            use(xlink:href="img/map.svg#arrow-triangle")
     .header-mobile__info
       ul.header-mobile__info__list
-        li.header-mobile__info__item
+        li.header-mobile__info__item.sign-display-show
           a(href="#")
             .header-mobile__info__wrap
               svg(role="img").sign-ic
                 use(xlink:href="img/map.svg#sign")
               | Личный кабинет
-        li.header-mobile__info__item
+        li.header-mobile__info__item.cart-display-show
           a(href="#")
             .header-mobile__info__wrap
               svg(role="img").cart-ic
                 use(xlink:href="img/map.svg#cart")
               | Корзина
               span.user-counts__item__num 12 
-        li.header-mobile__info__item
+        li.header-mobile__info__item.rating-display-show
           a(href="#")
             .header-mobile__info__wrap
               svg(role="img").sign-ic
                 use(xlink:href="img/map.svg#rating")
               | Сравнение товаров
               span.user-counts__item__num 12 
-        li.header-mobile__info__item
+        li.header-mobile__info__item.like-display-show
           a(href="#")
             .header-mobile__info__wrap
               svg(role="img").like-ic
                 use(xlink:href="img/map.svg#like")
-              | Сравнение товаров
-              span.user-counts__item__num 0
+              | Избранные товары
+              span.user-counts__item__num.empty 0
         li.header-mobile__info__item
           a(href="#").header-mobile__menu__drop
             .header-mobile__info__wrap
