@@ -1,51 +1,73 @@
-.header-mobile{
-  display: none;
-  background: @primary;
-  height: 60px;
-  justify-content: space-between;
-  padding: 0 20px;
-  align-items: center;
+.header-mobile {
   position: relative;
-  &__title{
-    & > span{
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+
+  background: @primary;
+  &__title {
+    & > span {
       display: inline-block;
       margin-left: 20px;
-      font-size: 16px;
+
       font-weight: bold;
-      color: #fff;
+      font-size: 16px;
       vertical-align: middle;
+      color: #ffffff;
     }
   }
-  &__burger{
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
+  &__burger {
     position: relative;
-    height: 12px;
+
+    display: inline-block;
     width: 18px;
+    height: 12px;
+
+    vertical-align: middle;
+
+    transform: rotate(0deg);
+    cursor: pointer;
+
+    transition: 0.5s ease-in-out;
     &.open span:nth-child(1) {
       top: 6px;
+
       -webkit-transform: rotate(135deg);
       -moz-transform: rotate(135deg);
       -o-transform: rotate(135deg);
       transform: rotate(135deg);
     }
     &.open span:nth-child(2) {
-      opacity: 0;
       left: -60px;
+
+      opacity: 0;
     }
     &.open span:nth-child(3) {
       top: 6px;
+
       -webkit-transform: rotate(-135deg);
       -moz-transform: rotate(-135deg);
       -o-transform: rotate(-135deg);
       transform: rotate(-135deg);
     }
-    span{
+    span {
+      position: absolute;
+      left: 0;
+
+      display: block;
+      width: 18px;
+      height: 2px;
+
+      background: #ffffff;
+      transform: rotate(0deg);
+      opacity: 1;
+
+      transition: 0.25s ease-in-out;
       &:nth-child(1) {
-        top: 0px;
+        top: 0;
       }
       &:nth-child(2) {
         top: 6px;
@@ -53,152 +75,192 @@
       &:nth-child(3) {
         top: 12px;
       }
-      position: absolute;
-      opacity: 1;
-      left: 0;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
-      width: 18px;
-      height: 2px;
-      display: block;
-      background: @header-links-bottom;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
     }
   }
-  &__list{
-    .user-counts__item__link{
-      svg{
-        fill: #fff;
-        stroke: #fff;
-        &:hover{
-          fill: #fff;
-          stroke: #fff;
+  &__list {
+    .user-counts {
+      &__item {
+        margin-top: 0;
+        &:first-child {
+          margin-right: 18px;
+        }
+        &__link {
+          svg {
+            fill: #ffffff;
+            stroke: #ffffff;
+            // &:hover {
+            //   fill: #ffffff;
+            //   stroke: #ffffff;
+            // }
+          }
+
+          .sign-ic {
+            width: 16px;
+            height: 19px;
+            margin-right: 0;
+            stroke: none;
+          }
+        }
+
+        &__num {
+          color: @primary;
+
+          background: #ffffff;
         }
       }
     }
-    .user-counts__item__num{
-      background: #fff;
-      color: @primary;
-    }
   }
-  &__menu{
+  &__menu {
     position: absolute;
     top: 100%;
     left: -305px;
-    border-left: 8px solid @primary;
+
     width: 100%;
     max-width: 295px;
+
+    background: #ffffff;
+    border-left: 8px solid @primary;
     box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.1);
+
     transition: left 0.5s ease;
-    background: #fff;
-    &.open{
+    &.open {
       left: 0;
     }
-    &__item{
+    &__item {
       height: 60px;
-      border-bottom: 1px solid #E7E7E8;
-      line-height: 60px;
       padding: 0 15px;
+
+      line-height: 60px;
+
+      border-bottom: 1px solid #e7e7e8;
       cursor: pointer;
-      &_phone{
+      &_phone {
         display: flex;
-        line-height: 1;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
+
         font-weight: 600;
-        span{
-          font-weight: 500;
-          color: #999999;
-          font-size: .9rem;
+        line-height: 1;
+        span {
           margin-top: 5px;
+
+          font-weight: 500;
+          font-size: 0.9rem;
+          color: #999999;
         }
       }
-      a{
+      a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &:hover {
+          color: @primary;
+        }
       }
-      &_back{
+      &_back {
         display: flex;
         align-items: center;
+
         color: #999999;
-        svg{
+        svg {
           margin-right: 20px;
         }
       }
-      &.active{
-        color: #438BE3;
-        background: #ECF4FF;
+      &.active {
+        color: #438be3;
+
+        background: #ecf4ff;
       }
     }
-    &__sublist{
-      background: #fff;
+    &__sublist {
       position: absolute;
       top: 0;
-      left: -295px;
-      width: 100%;
       bottom: 0;
-      height: 100%;
+      left: -295px;
       z-index: 9999;
+
+      width: 100%;
+      height: 100%;
+
+      background: #ffffff;
+
       transition: left 0.5s ease;
-      &.active{
-        left: 0px;
+      &.active {
+        left: 0;
       }
     }
   }
-  &__info{
-    &__wrap{
+  &__info {
+    &__wrap {
       position: relative;
-      vertical-align: middle;
+
       display: inline;
+
+      vertical-align: middle;
     }
-    &__list{
-      background: #F9F9F9;
+    &__list {
+      background: #f9f9f9;
     }
-    &__item{
-      padding: 0 15px;
+    &__item {
       height: 60px;
+      padding: 0 15px;
+
       line-height: 60px;
-      border-bottom: 1px solid #E7E7E8;
-      .phone-ic{
-        fill: @primary;
+
+      border-bottom: 1px solid #e7e7e8;
+      .sign-ic {
+        width: 18px;
         height: 20px;
       }
-      & > a{
+      .cart-ic {
+        stroke: #333333;
+      }
+      .phone-ic {
+        height: 20px;
+
+        fill: @primary;
+      }
+
+      & > a {
         display: block;
         width: 100%;
         height: 100%;
       }
-      svg{
-        margin-right: 20px;
+      svg {
         width: 20px;
+        margin-right: 20px;
+
         vertical-align: middle;
       }
     }
   }
-  &__contact{
+  &__contact {
+    display: @mobile-menu-contacts-display;
     padding: 15px 0;
-    &__item{
+    &__item {
       display: flex;
-      padding-left: 15px;
       margin-bottom: 15px;
-      &:last-child{
+      padding-left: 15px;
+      &:last-child {
         margin-bottom: 0;
       }
-      a{
+      a {
         display: flex;
       }
-      svg{
+      svg {
         width: 20px;
         height: 20px;
-        vertical-align: middle;
         margin-right: 20px;
+
+        vertical-align: middle;
       }
     }
   }
-  &__place-ic{
+  &__place-ic {
     position: static;
   }
 }
