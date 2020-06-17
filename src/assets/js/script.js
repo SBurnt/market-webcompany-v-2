@@ -1,7 +1,7 @@
 /*svg4everybody({
-  nosvg: true, // shiv <svg> and <use> elements and use image fallbacks
-	polyfill: true // polyfill <use> elements for External Content
-});*/
+   nosvg: true, // shiv <svg> and <use> elements and use image fallbacks
+ 	polyfill: true // polyfill <use> elements for External Content
+ });*/
 
 var menuBtn = document.querySelector("#mobile-menu-btn");
 var mobileMenu = document.querySelector("#header-mobile-menu");
@@ -44,7 +44,7 @@ $(document).ready(function () {
     linkText: "&bull;&nbsp;&bull;&nbsp;&bull;",
   });
 
-  var slider1 = $(".main-banner.under")
+  var slider1 = $(".main-banner.under");
   if (slider1.length) {
     $(".header").addClass("header_white");
     // $(".header").css("background", "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)");
@@ -130,3 +130,17 @@ function Tabs() {
 }
 
 var connectTabs = new Tabs();
+
+// присваивание названия в шапке при клике по элементам в меню (header-mobile-1)
+function setNameHeader() {
+  var item = document.querySelectorAll(".js-set-name-header a");
+  var title = document.querySelector(".header-mobile__title-item");
+
+  item.forEach(function (items) {
+    items.addEventListener("click", function (e) {
+      title.innerHTML = e.target.innerText;
+    });
+  });
+}
+
+setNameHeader();
