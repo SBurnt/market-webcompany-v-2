@@ -1,5 +1,6 @@
 .background-banner
-header.header.header_white-nu.header_slider-under-nu.container
+//- header.header.header_white-nu.header_slider-under-nu.container
+header.header
   .header__top.full-width-border
     .container
       ul.menu__sm
@@ -19,7 +20,7 @@ header.header.header_white-nu.header_slider-under-nu.container
           a(href="#") Партнеры
         li
           a(href="#") Контакты
-      span.place__select Мордор
+      span.place__select Минск
         svg(role="img").place__select__arrow-ic
           use(xlink:href="img/map.svg#arrow-down-sm")
         ul.place__select__list
@@ -103,16 +104,96 @@ header.header.header_white-nu.header_slider-under-nu.container
             a(href="#").phone-dropdown__item__link Наш Viber
       a(href="#").callback-btn Заказать звонок
       span.adress.adress_header Минск, ул. Мележа 1, 8 этаж, офис 816
-      a(href="$").sign
+      a(href="$").sign.sign-display-show
         svg(role="img").sign-ic
           use(xlink:href="img/map.svg#sign")
         | Войти
-  .header__middle
+  .header__middle.full-width-border
     .container
       a(href="#").logo
         svg(role="img").logo-ic
           use(xlink:href="img/map.svg#logo")
       ul.menu
+        li.menu__item.dropdown.dropdown-3
+          a(href="#") Красота право
+          svg(role="img").arrow-down-ic
+            use(xlink:href="img/map.svg#arrow-down")
+          .dropdown__content.dropdown-3__block
+            ul.dropdown-3__list
+              li.dropdown-3__item
+                a(href="#") Проектирование домов
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из газосиликатных блоков
+                    svg(role="img").arrow-down-ic
+                      use(xlink:href="img/map.svg#arrow-menu-right")
+                    ul.dropdown-3__list.dropdown-3__sublist.left
+                      li.dropdown-3__item
+                        a(href="#") Проекты домов из бруса
+                      li.dropdown-3__item
+                        a(href="#") Проекты домов из газосиликатных блоков
+                      li.dropdown-3__item
+                        a(href="#") Проекты коттеджей
+                      li.dropdown-3__item
+                        a(href="#") Проекты двухэтажных домов
+                        svg(role="img").arrow-down-ic
+                          use(xlink:href="img/map.svg#arrow-menu-right")
+                        ul.dropdown-3__list.dropdown-3__sublist
+                          li.dropdown-3__item
+                            a(href="#") Проекты домов из бруса
+                          li.dropdown-3__item
+                            a(href="#") Проекты домов из газосиликатных блоков
+                          li.dropdown-3__item
+                            a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из пеноблока
+              li.dropdown-3__item
+                a(href="#") Дизайн интерьера
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из газосиликатных блоков
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из пеноблока
+              li.dropdown-3__item.drop
+                a(href="#") Ландшафтное проектирование
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из газосиликатных блоков
+                  li.dropdown-3__item
+                    a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+              li.dropdown-3__item.drop
+                a(href="#") Проектирование домов
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из пеноблока
         li.menu__item.dropdown
           a(href="#") Авто
           svg(role="img").arrow-down-ic
@@ -353,67 +434,147 @@ header.header.header_white-nu.header_slider-under-nu.container
           svg(role="img").arrow-down-ic
             use(xlink:href="img/map.svg#arrow-down")
           .dropdown__content.dropdown-1
-              ul.dropdown-1__list
-                li.dropdown-1__list__item
-                  img(src="img/auto-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Авто
-                li.dropdown-1__list__item
-                  img(src="img/clothes-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Одежда и обувь
-                li.dropdown-1__list__item
-                  img(src="img/chair-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Мебель
-                li.dropdown-1__list__item
-                  img(src="img/print-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Товары для офиса
-                    ul.dropdown-1__inside__list
-                      li
-                        a(href="#") Проекторы
-                      li
-                        a(href="#") Принтеры и МФУ
-                li.dropdown-1__list__item
-                  img(src="img/devices-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Бытовая техника
-                li.dropdown-1__list__item
-                  img(src="img/build-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Строительство
-                li.dropdown-1__list__item
-                  img(src="img/bike-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Велосипеды
+            ul.dropdown-1__list
+              li.dropdown-1__list__item
+                img(src="img/auto-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Авто
+              li.dropdown-1__list__item
+                img(src="img/clothes-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Одежда и обувь
+              li.dropdown-1__list__item
+                img(src="img/chair-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Мебель
+              li.dropdown-1__list__item
+                img(src="img/print-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Товары для офиса
+                  ul.dropdown-1__inside__list
+                    li
+                      a(href="#") Проекторы
+                    li
+                      a(href="#") Принтеры и МФУ
+              li.dropdown-1__list__item
+                img(src="img/devices-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Бытовая техника
+              li.dropdown-1__list__item
+                img(src="img/build-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Строительство
+              li.dropdown-1__list__item
+                img(src="img/bike-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Велосипеды
         li.menu__item.dropdown
           a(href="#") Одежда и обувь
           svg(role="img").arrow-down-ic
             use(xlink:href="img/map.svg#arrow-down")
           .dropdown__content.dropdown-1
-              ul.dropdown-1__list
-                li.dropdown-1__list__item
-                  img(src="img/auto-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Авто
-                li.dropdown-1__list__item
-                  img(src="img/clothes-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Одежда и обувь
-                li.dropdown-1__list__item
-                  img(src="img/chair-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Мебель
-                li.dropdown-1__list__item
-                  img(src="img/print-dr.png")
-                  .dropdown-1__inside
-                    a(href="#").dropdown-1__inside__title Товары для офиса
-                    ul.dropdown-1__inside__list
-                      li
-                        a(href="#") Проекторы
-                      li
-                        a(href="#") Принтеры и МФУ
+            ul.dropdown-1__list
+              li.dropdown-1__list__item
+                img(src="img/auto-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Авто
+              li.dropdown-1__list__item
+                img(src="img/clothes-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Одежда и обувь
+              li.dropdown-1__list__item
+                img(src="img/chair-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Мебель
+              li.dropdown-1__list__item
+                img(src="img/print-dr.png")
+                .dropdown-1__inside
+                  a(href="#").dropdown-1__inside__title Товары для офиса
+                  ul.dropdown-1__inside__list
+                    li
+                      a(href="#") Проекторы
+                    li
+                      a(href="#") Принтеры и МФУ
+        li.menu__item.dropdown.dropdown-3.left
+          a(href="#") Красота лево
+          svg(role="img").arrow-down-ic
+            use(xlink:href="img/map.svg#arrow-down")
+          .dropdown__content.dropdown-3__block
+            ul.dropdown-3__list
+              li.dropdown-3__item
+                a(href="#") Проектирование домов
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из газосиликатных блоков
+                    svg(role="img").arrow-down-ic
+                      use(xlink:href="img/map.svg#arrow-menu-right")
+                    ul.dropdown-3__list.dropdown-3__sublist.left
+                      li.dropdown-3__item
+                        a(href="#") Проекты домов из бруса
+                      li.dropdown-3__item
+                        a(href="#") Проекты домов из газосиликатных блоков
+                      li.dropdown-3__item
+                        a(href="#") Проекты коттеджей
+                      li.dropdown-3__item
+                        a(href="#") Проекты двухэтажных домов
+                        svg(role="img").arrow-down-ic
+                          use(xlink:href="img/map.svg#arrow-menu-right")
+                        ul.dropdown-3__list.dropdown-3__sublist
+                          li.dropdown-3__item
+                            a(href="#") Проекты домов из бруса
+                          li.dropdown-3__item
+                            a(href="#") Проекты домов из газосиликатных блоков
+                          li.dropdown-3__item
+                            a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из пеноблока
+              li.dropdown-3__item
+                a(href="#") Дизайн интерьера
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из газосиликатных блоков
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из пеноблока
+              li.dropdown-3__item.drop
+                a(href="#") Ландшафтное проектирование
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из газосиликатных блоков
+                  li.dropdown-3__item
+                    a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+              li.dropdown-3__item.drop
+                a(href="#") Проектирование домов
+                svg(role="img").arrow-down-ic
+                  use(xlink:href="img/map.svg#arrow-menu-right")
+                ul.dropdown-3__list.dropdown-3__sublist
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из бруса
+                  li.dropdown-3__item
+                    a(href="#") Проекты коттеджей
+                  li.dropdown-3__item
+                    a(href="#") Проекты двухэтажных домов
+                  li.dropdown-3__item
+                    a(href="#") Проекты домов из пеноблока        
         li.menu__item.dropdown
           a(href="#") Строительство
           svg(role="img").arrow-down-ic
@@ -540,7 +701,6 @@ header.header.header_white-nu.header_slider-under-nu.container
                     a(href="#") Автомобильные усилители
                   li
                     a(href="#") Автомагнитолы
-
         li.menu__item.dropdown
           a(href="#") Мебель
           svg(role="img").arrow-down-ic
@@ -667,88 +827,6 @@ header.header.header_white-nu.header_slider-under-nu.container
                     a(href="#") Автомобильные усилители
                   li
                     a(href="#") Автомагнитолы
-        li.menu__item.active 
-          a(href="#") Красота
-        li.menu__item.dropdown.dropdown-3
-          a(href="#") Красота
-          svg(role="img").arrow-down-ic
-            use(xlink:href="img/map.svg#arrow-down")
-          .dropdown__content.dropdown-3__block
-            ul.dropdown-3__list
-              li.dropdown-3__item
-                a(href="#") Проектирование домов
-                svg(role="img").arrow-down-ic
-                  use(xlink:href="img/map.svg#arrow-menu-right")
-                ul.dropdown-3__list.dropdown-3__sublist
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из бруса
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из газосиликатных блоков
-                    svg(role="img").arrow-down-ic
-                      use(xlink:href="img/map.svg#arrow-menu-right")
-                    ul.dropdown-3__list.dropdown-3__sublist.left-side
-                      li.dropdown-3__item
-                        a(href="#") Проекты домов из бруса
-                      li.dropdown-3__item
-                        a(href="#") Проекты домов из газосиликатных блоков
-                      li.dropdown-3__item
-                        a(href="#") Проекты коттеджей
-                      li.dropdown-3__item
-                        a(href="#") Проекты двухэтажных домов
-                        svg(role="img").arrow-down-ic
-                          use(xlink:href="img/map.svg#arrow-menu-right")
-                        ul.dropdown-3__list.dropdown-3__sublist.left-side
-                          li.dropdown-3__item
-                            a(href="#") Проекты домов из бруса
-                          li.dropdown-3__item
-                            a(href="#") Проекты домов из газосиликатных блоков
-                          li.dropdown-3__item
-                            a(href="#") Проекты коттеджей
-                  li.dropdown-3__item
-                    a(href="#") Проекты коттеджей
-                  li.dropdown-3__item
-                    a(href="#") Проекты двухэтажных домов
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из пеноблока
-              li.dropdown-3__item
-                a(href="#") Дизайн интерьера
-                svg(role="img").arrow-down-ic
-                  use(xlink:href="img/map.svg#arrow-menu-right")
-                ul.dropdown-3__list.dropdown-3__sublist
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из бруса
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из газосиликатных блоков
-                  li.dropdown-3__item
-                    a(href="#") Проекты двухэтажных домов
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из пеноблока
-              li.dropdown-3__item.drop
-                a(href="#") Ландшафтное проектирование
-                svg(role="img").arrow-down-ic
-                  use(xlink:href="img/map.svg#arrow-menu-right")
-                ul.dropdown-3__list.dropdown-3__sublist
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из бруса
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из газосиликатных блоков
-                  li.dropdown-3__item
-                    a(href="#") Проекты коттеджей
-                  li.dropdown-3__item
-                    a(href="#") Проекты двухэтажных домов
-              li.dropdown-3__item.drop
-                a(href="#") Проектирование домов
-                svg(role="img").arrow-down-ic
-                  use(xlink:href="img/map.svg#arrow-menu-right")
-                ul.dropdown-3__list.dropdown-3__sublist
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из бруса
-                  li.dropdown-3__item
-                    a(href="#") Проекты коттеджей
-                  li.dropdown-3__item
-                    a(href="#") Проекты двухэтажных домов
-                  li.dropdown-3__item
-                    a(href="#") Проекты домов из пеноблока
         li.menu__item.dropdown 
           a(href="#") Велосипеды
           svg(role="img").arrow-down-ic
@@ -886,17 +964,17 @@ header.header.header_white-nu.header_slider-under-nu.container
           a(href="#").user-counts__item__link
             svg(role="img").search-ic
               use(xlink:href="img/map.svg#search")
-        li.user-counts__item
+        li.user-counts__item.rating-display-show
           a(href="#").user-counts__item__link
             svg(role="img").rating-ic
               use(xlink:href="img/map.svg#rating")
             span.user-counts__item__num 12
-        li.user-counts__item
+        li.user-counts__item.like-display-show
           a(href="#").user-counts__item__link
             svg(role="img").like-ic
               use(xlink:href="img/map.svg#like")
             span.user-counts__item__num.empty 0
-        li.user-counts__item.cart
+        li.user-counts__item.cart.cart-display-show
           a(href="#").user-counts__item__link
             svg(role="img").cart-ic
               use(xlink:href="img/map.svg#cart")
