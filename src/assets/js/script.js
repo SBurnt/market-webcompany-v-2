@@ -44,28 +44,40 @@ $(document).ready(function () {
     linkText: "&bull;&nbsp;&bull;&nbsp;&bull;",
   });
 
-  var slider1 = $(".main-banner.under");
-  if (slider1.length) {
-    $(".header").addClass("header_white");
-    // $(".header").css("background", "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)");
-  }
+  // var slider1 = $(".main-banner.under");
+  // if (slider1.length) {
+  //   $(".header").addClass("header_white");
+  //   // $(".header").css("background", "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)");
+  // }
+
+  // $(".main-banner.under").on("afterChange", function (slick, currentSlide) {
+  //   if ($(".slick-current").hasClass("light-slide")) {
+  //     if ($(".header").hasClass("header_white")) {
+  //       $(".header").removeClass("header_white");
+  //       $(".header").css(
+  //         "background",
+  //         "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(250, 250, 250, 0.8) 0%, rgba(250, 250, 250, 0) 100%)"
+  //       );
+  //     }
+  //   } else {
+  //     if (!$(".header").hasClass("header_white")) {
+  //       $(".header").addClass("header_white");
+  //       $(".header").css(
+  //         "background",
+  //         "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)"
+  //       );
+  //     }
+  //   }
+  // });
 
   $(".main-banner.under").on("afterChange", function (slick, currentSlide) {
     if ($(".slick-current").hasClass("light-slide")) {
       if ($(".header").hasClass("header_white")) {
         $(".header").removeClass("header_white");
-        $(".header").css(
-          "background",
-          "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(250, 250, 250, 0.8) 0%, rgba(250, 250, 250, 0) 100%)"
-        );
       }
     } else {
       if (!$(".header").hasClass("header_white")) {
         $(".header").addClass("header_white");
-        $(".header").css(
-          "background",
-          "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)"
-        );
       }
     }
   });
