@@ -94,6 +94,8 @@
             width: 18px;
             height: 20px;
             margin-right: 0;
+
+            stroke: none;
           }
 
           .cart-ic {
@@ -116,9 +118,11 @@
           }
         }
         &__num {
-          color: #ffffff;
+          position: absolute;
+          bottom: 9px;
+          left: 12px;
 
-          background: @primary;
+          margin-left: 0;
         }
       }
     }
@@ -229,6 +233,12 @@
       line-height: 60px;
 
       border-bottom: 1px solid #e7e7e8;
+      .sign-ic {
+        width: 18px;
+        height: 20px;
+
+        stroke: none;
+      }
       .phone-ic {
         height: 20px;
 
@@ -247,6 +257,15 @@
         vertical-align: middle;
 
         stroke: @part14;
+      }
+      .user-counts__item__num {
+        position: absolute;
+        bottom: 9px;
+        left: 12px;
+
+        margin-left: 0;
+
+        line-height: 18px;
       }
     }
   }
